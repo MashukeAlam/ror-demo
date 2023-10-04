@@ -13,6 +13,14 @@
     </tr>
   </thead>
 
+  <tfoot>
+    <tr>
+      <td>
+        <%= link_to 'New Product', new_product_path %>
+      </td>
+    </tr>
+  </tfoot>
+
   <tbody>
     <% @products.each do |product| %>
       <tr>
@@ -30,4 +38,3 @@
 
 <br>
 
-<%= link_to 'New Product', new_product_path %>
