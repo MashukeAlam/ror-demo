@@ -32,12 +32,17 @@ class ProductTest < ActiveSupport::TestCase
   end
 
   test "image url should end in proper extensions" do
-    assert newproduct("jim.jpg").valid?
-    assert newproduct("jim.png").valid?
-    assert newproduct("jim.gif").valid?
-    assert newproduct("jim.txt").invalid?
-    assert newproduct("jim.jpeg").invalid?
-    assert newproduct("jim.mp3").valid?
+    good = %w{jim.jpg jim.png jim.gif a.b.v.txt.gif https://lol.png kim.jpeg}
+    bad = %w{jim.cpp jim.mp3 jim.txt a.b.v.txt.sys https://lol.txt}
+    
+    good.each do |curr|
+      assert newproduct(curr).valid?
+    end
+
+    bad.each do |curr|
+      assert newproduct(curr).invalid?
+    end
+
   end
 
 end
