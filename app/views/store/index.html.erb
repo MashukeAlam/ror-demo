@@ -1,7 +1,7 @@
 <% if notice %>
   <aside id="notice"><%= notice %></aside>
 <% end %>
-<ul>
+<ul class="catalog">
   <% @products.each do |curr| %>
     <li>
       <%= image_tag curr.image_url %>
