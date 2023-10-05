@@ -5,7 +5,7 @@
   <% @products.each do |curr| %>
     <li>
       <%= image_tag curr.image_url %>
-      <h2><%= curr.title %></h2>
+      <h2><%= curr.title %></h2> 
       <p><%= sanitize curr.description %></p>
       <div>
         <%= curr.price %>
