@@ -8,7 +8,7 @@
       <h2><%= curr.title %></h2> 
       <p><%= sanitize curr.description %></p>
       <div>
-        <%= curr.price %>
+        <%= number_to_currency(curr.price) %>
       </div>
     </li>
   <%end%>

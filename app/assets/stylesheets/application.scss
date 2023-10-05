@@ -55,7 +55,8 @@ header.main {
         text-align: center;  // mobile has centered nav
     @media (min-width: 30em) {
         text-align: left; // desktop nav is left-aligned
-    padding: 1em;     // and needs more padding
+        padding: 1em;     // and needs more padding
+        //height: 100vh;
     }
         ul {
             list-style: none;

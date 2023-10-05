@@ -17,16 +17,16 @@
   <section class="content">
     <nav class="side_nav">
       <ul>
-        <li><a href="/"></a>Home</li>
+        <li><a href="/">Home</a>Home</li>
         <li><a href="/questions">Questions</a></li>
-        <li><a href="/news"></a>News</li>
+        <li><a href="/news">News</a></li>
         <li><a href="/contact">Contact</a></li>
       </ul>
     </nav>
+    <main class='<%= controller.controller_name %>'>
+      <%= yield %>
+    </main>
   </section>
-  <main class='<%= controller.controller_name %>'>
-    <%= yield %>
-  
-  </main>
+
   </body>
 </html>
