@@ -1,0 +1,15 @@
+<% if notice %>
+  <aside id="notice"><%= notice %></aside>
+<% end %>
+<ul>
+  <% @products.each do |curr| %>
+    <li>
+      <%= image_tag curr.image_url %>
+      <h2><%= curr.title %></h2>
+      <p><%= sanitize curr.description %></p>
+      <div>
+        <%= curr.price %>
+      </div>
+    </li>
+  <%end%>
+</ul>
