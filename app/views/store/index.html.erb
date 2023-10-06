@@ -2,15 +2,20 @@
   <aside id="notice"><%= notice %></aside>
 <% end %>
 <ul class="catalog">
-  <% @products.each do |curr| %>
-    <li>
-      <%= image_tag curr.image_url %>
-      <h2><%= curr.title %></h2> 
-      <p><%= sanitize curr.description %></p>
-      <div>
-        <%= number_to_currency(curr.price) %>
+  <% cache @products do %>
+    <% @products.each do |curr| %>
+      <% cache curr do %>
+        <li>
+          <%= image_tag curr.image_url %>
+          <h2><%= curr.title %></h2>
+          <p><%= sanitize curr.description %></p>
+          <div>
+            <%= number_to_currency(curr.price) %>
 
-      </div>
-    </li>
-  <%end%>
-</ul>
+          </div>
+        </li>
+      <% end %>
+    <% end %>
+
+    </ul>
+  <% end %>
