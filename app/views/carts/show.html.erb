@@ -9,3 +9,5 @@
   </li>
   <% end %>
 </ul>
+
+<%= button_to 'Empty cart', @cart, method: :delete, data: { confirm: "Are you certain that you want to empty cart?"} %>
