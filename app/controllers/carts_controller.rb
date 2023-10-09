@@ -1,5 +1,11 @@
 class CartsController < ApplicationController
   before_action :set_cart, only: %i[ show edit update destroy ]
+  rescue_from ActiveRecord::RecordNotFound, with: :invalid_cart
+
+  def invalid_cart
+    logger.error "ERROR >>> Trying to find a non existant cart"
+    redirect_to store_index_url, notice: "Cart not found!"
+  end
 
   # GET /carts or /carts.json
   def index
