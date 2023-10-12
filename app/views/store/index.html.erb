@@ -11,7 +11,7 @@
           <p><%= sanitize curr.description %></p>
           <div>
             <%= number_to_currency(curr.price) %>
-            <%= button_to "Add to cart", line_items_path(product_id: curr) %>
+            <%= button_to "Add to cart", line_items_path(product_id: curr), remote: true %>
           </div>
         </li>
       <% end %>
