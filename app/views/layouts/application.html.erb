@@ -17,7 +17,10 @@
   <section class="content">
     <nav class="side_nav">
       <div id="cart" class="carts">
-        <%= render @cart %>
+        <% if @cart %>
+          <%= render @cart %>
+        <% end %>
+
       </div>
       <ul>
         <li class="time"><%= "#{Time.now.day}/#{Time.now.month}/#{Time.now.year}" %></li>
