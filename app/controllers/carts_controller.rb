@@ -7,6 +7,7 @@ class CartsController < ApplicationController
     redirect_to store_index_url, notice: "Cart not found!"
   end
 
+
   # GET /carts or /carts.json
   def index
     @carts = Cart.all
