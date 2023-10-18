@@ -15,9 +15,8 @@ class CreditCardPayType extends React.Component {
                            name="order[expiration_date]"
                            id="order_expiration_date"
                            size="9"
-                           report erratum • discuss
-                    Iteration H1: Adding Fields Dynamically to a Form • 209
-                    placeholder="e.g. 03/19" />
+
+                            placeholder="e.g. 03/19" />
                 </div>
             </div>
         );
