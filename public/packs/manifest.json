@@ -20,15 +20,15 @@
     },
     "pay_type": {
       "js": [
-        "/packs/js/pay_type-4945afe6f5f066fa7ffc.js"
+        "/packs/js/pay_type-89daf831f89d365fc2c5.js"
       ],
       "js.map": [
-        "/packs/js/pay_type-4945afe6f5f066fa7ffc.js.map"
+        "/packs/js/pay_type-89daf831f89d365fc2c5.js.map"
       ]
     }
   },
   "hello_react.js": "/packs/js/hello_react-6c2740299f6ffe639b84.js",
   "hello_react.js.map": "/packs/js/hello_react-6c2740299f6ffe639b84.js.map",
-  "pay_type.js": "/packs/js/pay_type-4945afe6f5f066fa7ffc.js",
-  "pay_type.js.map": "/packs/js/pay_type-4945afe6f5f066fa7ffc.js.map"
+  "pay_type.js": "/packs/js/pay_type-89daf831f89d365fc2c5.js",
+  "pay_type.js.map": "/packs/js/pay_type-89daf831f89d365fc2c5.js.map"
 }
