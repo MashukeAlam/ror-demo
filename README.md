@@ -1,24 +1,45 @@
-# README
+# Agile Web Development using Rails
+# Depot app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a project intended for learning Rails fundamentals. Following are the installation instructions for any debian based OS.
 
-Things you may want to cover:
+#  Installation
+## Rbenv install
+Run the following commands in order:
 
-* Ruby version
+```sudo apt update```
 
-* System dependencies
+```sudo apt install git curl libssl-dev libreadline-dev zlib1g-dev autoconf bison build-essential libyaml-dev libreadline-dev libncurses5-dev libffi-dev libgdbm-dev```
 
-* Configuration
+```curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer | bash```
 
-* Database creation
+```echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc```
 
-* Database initialization
+```echo 'eval "$(rbenv init -)"' >> ~/.bashrc```
 
-* How to run the test suite
+```source ~/.bashrc```
 
-* Services (job queues, cache servers, search engines, etc.)
+## Getting ruby with ruby-build
+```rbenv install 2.7.7```
 
-* Deployment instructions
+```rbenv global 2.7.7```
 
-* ...
+## Gem Setup
+```echo "gem: --no-document" > ~/.gemrc```
+
+```gem install bundler```
+
+```gem env home```
+
+## Rails Install
+```gem install rails -v 6.0.1```
+
+## Bundle Install
+```bundle install```
+
+## DB Migrate
+```rails db:migrate```
+
+# Running the project
+```rails s```
+
