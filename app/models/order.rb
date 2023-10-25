@@ -36,9 +36,7 @@ class Order < ApplicationRecord
     when "Purchase order"
       payment_method = :po
       payment_details[:po_num] = pay_type_params[:po_number]
-    else
-      puts "Never going to run"
-    end
+
     end
 
     payment_result = Pago.make_payment(
